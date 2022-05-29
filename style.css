@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: darkgray;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+.container {
+    width: 85%;
+    height: 75%;
+    background-color: darkgray;
+    border-radius: 15px;
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 2.5);
+    display: flex;
+    font-size: 22px;
+}
+
+.left-side {
+    display: flex;
+    border-top-left-radius:  15px;
+    border-bottom-left-radius:  15px;
+    flex: 0 40%;
+    background-color: #2980b9;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.right-side {
+    display: flex;
+    border-top-right-radius:  15px;
+    border-bottom-right-radius:  15px;
+    flex: 0 60%;
+    background-color: #34495e;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.left-side-title {
+    justify-content: center;
+    align-items: center;
+}
+
+.right-side-title {
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.signin-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.left-side h2,
+p,
+.signin-form {
+    margin: 10px 0;
+    
+}
+
+.sign-in-btn {
+    margin: 15px;
+    border-radius: 10px;
+    background-color: #0be881;
+    padding: 10px;
+    width: 280px;
+    height: 50px;
+    text-align: center;
+    font-size: 24px;
+
+}
+
+.sign-in-btn:hover {
+    background-color: aqua;
+    transition: all .4s;
+}
+
+#username,
+#password {
+    padding: 10px;
+    font-size: 20px;
+    margin-top: 5px;
+    border-top-right-radius:  5px;
+    border-bottom-right-radius:  5px;
+
+}
+
+.fa-solid {
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 20px;
+    background-color: gray;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.username-area {
+    display: flex;
+}
+
+.password-area {
+    display: flex;
+}
+
+.email-area {
+    display: flex;
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        height: 900px;
+    }
+
+    .left-side {
+        width: 100%;
+        height: 450px;
+        border-radius: 10px;
+        
+    }
+
+    .right-side {
+        width: 100%;
+        height: 450px;
+        border-radius: 10px;
+        
+    }
+}
